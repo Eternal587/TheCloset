@@ -1,0 +1,142 @@
+<!doctype html><html><head><style type="text/css">.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(15,15,15, 1);
+  height: 2.5%;
+}
+
+.body {
+  background: black;
+}
+
+.termtext {
+  margin-left: 0.5%;
+  color: rgb(55, 200, 55);
+  font-size: 25px;
+  font: bolder;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.termtextr {
+  right: 0;
+  position: fixed;
+  margin-right: 0.5%;
+  color: rgb(55, 200, 55);
+  font-size: 25px;
+  font: bolder;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sidebar {
+  background: rgb(15,15,15, 1);
+  border-color: white;
+  border-width: 5px;
+  position: fixed;
+  height: 96%;
+  width: 20%;
+  bottom: 0;
+  left: 0;
+}
+
+.sidebutton {
+  width: 95%;
+  height: 5%;
+  border-radius: 5px;
+  color: rgb(55, 200, 55);
+  background: rgb(15,15,15, 1);
+  font-size: 15px;
+  font: bolder;
+  margin-left: 2.5%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: 0.2s;
+}
+
+.sidebutton:hover {
+  background: (55, 55, 55, 1);
+}
+
+.bodyobj {
+  margin-top: 2%;
+  margin-left: 15%;
+  width: 85%;
+  height: 5%;
+  border-radius: 5px;
+  color: rgb(55, 200, 55);
+  background: rgb(15,15,15, 1);
+  font-size: 25px;
+  font: bolder;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: 0.2s;
+}
+
+.bodyobj:hover {
+  background: (55, 55, 55, 1);
+}
+
+
+.bodyobj2 {
+  margin-left: 10%;
+  height: 5%;
+  border-radius: 5px;
+  color: rgb(55, 200, 55);
+  background: rgb(15,15,15, 1);
+  font-size: 25px;
+  font: bolder;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: 0.2s;
+}</style></head><body><header>
+	<div class='topbar'>
+		<p1 id='time' class='termtext'>00:00:00</p1>
+		<p1 id='battery' class='termtextr'>100%</p1>
+	</div>
+	<div class='sidebar'>
+		<button class='sidebutton' onclick="openhtml()">Open HTML</button>
+		<button class='sidebutton' onclick="openlinkinnewtab()">Open Link</button>
+		<input type="file" class="" style='width: 90%; margin-left: 7%; margin-top: 2%;'id='Video'>Open Files</input>
+  </div>
+</header>
+
+<body class='body'>
+</body><script type="text/javascript">setInterval(showTime, 1000);
+setInterval(battery, 1000);
+
+function showTime() {
+  let time = new Date();
+  let hour = time.getHours();
+  let min = time.getMinutes();
+  let sec = time.getSeconds();
+  let day = time.getDate();
+  let month = time.getMonth() + 1;
+  let year = time.getFullYear();
+
+  document.getElementById('time').innerHTML = hour + ':' + min + ':' + sec;
+}
+function battery() {
+  navigator.getBattery().then(function (battery) {
+
+    var level = battery.level * 100 + '%';
+
+    document.getElementById('battery').innerHTML = level;
+  });
+}
+
+function openlink(link) {
+  window.open(link);
+}
+
+function openhtml() {
+  let x = prompt('enter code');
+  let y = window.open('', 'hmtl', 'height=640, width=360');
+  y.document.write(x);
+}
+
+function openlinkinnewtab() {
+  let link = prompt('link?');
+  let height = prompt('height?');
+  let width = prompt('width');
+  let x = 'height=' + height + ', width=' + width;
+  window.open(link, 'link', x);
+}</script></body><html>
