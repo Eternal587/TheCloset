@@ -88,8 +88,8 @@
 
 </body>
 <div class="navbar">
-<button class="navbuttonc" onclick="GoTo('eternal587.github.io/TheCloset/index.html')">Home</button>
-<button class="navbutton" onclick="GoTo('eternal587.github.io/TheCloset/TCR')">TCR</button>
+<button class="navbuttonc" onclick="GoTo('https://eternal587.github.io/TheCloset/Index.html')">Home</button>
+<button class="navbutton" onclick="GoTo('https://eternal587.github.io/TheCloset/TCR')">TCR</button>
 
 <text class="time" id="time">00:00:00</text>
 </div>
@@ -135,4 +135,8 @@
 
 timeUpdate();
 
-setInterval(timeUpdate, 1000)</script></body><html>
+setInterval(timeUpdate, 1000)
+
+function GoTo(website) {
+  window.open(website)
+}</script></body><html>
