@@ -1,0 +1,168 @@
+<!doctype html><html><head><style type="text/css">.body {
+  background-color: black;
+  color: rgb(0, 255, 0, 1);
+  font: 1rem "Fira Sans", sans-serif;
+  top: 4.05%;
+  position: fixed;
+}
+.navbar {
+  bottom: 96%;
+  left: 0;
+  border-color: rgb(25, 25, 25, 1);
+  border-width: 0px;
+  border-radius: 10px;
+  width: 100%;
+  height: 7%;
+  position: fixed;
+  background-color: rgb(35, 35, 35, 1);
+  display: flex;
+}
+
+.navbutton {
+  color: rgb(0, 255, 0, 1);
+  margin-top: 1.5%;
+  height: 65%;
+  font: 1.2rem "Fira Sans", sans-serif;
+  background-color: rgb(255, 255, 255, 0.05);
+  border-color: rgb(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transition: 0.05s;
+  
+}
+.navbutton:hover {
+  background-color: rgb(255, 255, 255, 0.1);
+}
+.navbuttonc {
+  color: rgb(0, 255, 0, 1);
+  margin-top: 1.5%;
+  font: 1.2rem "Fira Sans", sans-serif;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-color: rgb(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 65%;
+  transition: 0.05s;
+}
+.navbuttonc:hover {
+  background-color: rgb(255, 255, 255, 0.15);
+}
+
+.time {
+  color: rgb(0, 255, 0, 1);
+  margin-top: 1.5%;
+  right: 0.5%;
+  position: fixed;
+  font: 1.2rem "Fira Sans", sans-serif;
+}
+
+.PSA {
+  width: 100%;
+  height: 4%;
+  background-color: rgb(45, 35, 35, 1);
+  top: 4.5%;
+  position: fixed;
+  left: 0;
+  color: white;
+  font: 1.5rem "Fira Sans", sans-serif;
+}
+.PSAtext {
+  margin-left: 0.5%;
+  top: 4.6%;
+  position: fixed;
+}
+
+.nbt {
+position: fixed;
+top: 1%;
+left: 0.5%;
+}
+.nbt2 {
+position: fixed;
+top: 1%;
+left: 3.5%;
+}
+.nbt3 {
+position: fixed;
+top: 1%;
+left: 6%;
+}</style></head><body><html>
+  <head>
+    
+  </head>
+<body class="body">
+			<a href="https://the-closet-beta.vercel.app/Minecraft.html">- Minecraft</a> <br>
+			<a href="https://the-closet-beta.vercel.app/Jumpabit.html">- Jumpabit</a> <br>
+			<a href="https://the-closet-beta.vercel.app/Elemental Ultra v1.3.2.html">- Elemental Ultra</a> <br>
+			<a href="https://the-closet-beta.vercel.app/Elemental Ultra Pack Editor.html">- Elemental Ultra Pack Editor</a> <br>
+			<a href="https://the-closet-beta.vercel.app/Terraria.html">- Terraria</a> <br>
+			<a href="https://the-closet-beta.vercel.app/FISHING Simulator 1.html">- Fishing Simulator</a> <br>
+			<a href="https://the-closet-beta.vercel.app/my-solar-system_en.html">- Planet Simulator</a> <br>
+			<a href="https://the-closet-beta.vercel.app/FLIP.html">- FLIP</a> <br>
+			<a href="https://the-closet-beta.vercel.app/Paper Minecraft v11.html">- Paper Minecraft</a> <br>
+			<a href="https://the-closet-beta.vercel.app/Soundboard V3.html">- Soundboard</a> <br>
+			<a href="https://the-closet-beta.vercel.app/osu! Full Remake (1).html">- OSU</a> <br>
+			<a href="https://the-closet-beta.vercel.app/The Mast [3D].html">- The Mast</a> <br>
+			<a href="https://the-closet-beta.vercel.app/Dusttrust Sans Fight phase2.html">- DustTrust Sans</a> <br>
+			<a href="https://the-closet-beta.vercel.app/Portal 3D_ Test Chamber 13 (Scratch edition).html">- Portal</a> <br>
+			<a href="https://the-closet-beta.vercel.app/Clickeronia.html">- Clickeronia</a> <br>
+			<a href="https://the-closet-beta.vercel.app/Chess.html">- Chess</a> <br>
+			<a href="https://the-closet-beta.vercel.app/Terraformer v.1.3.2.html">- Terraformer</a> <br>
+			<a href="https://the-closet-beta.vercel.app/2048.html">- 2048</a> <br>
+</body>
+<div class="navbar">
+<a class="navbutton" href="https://eternal587.github.io/TheCloset/Index.html"><text class="nbt">Home</text></a>
+<a class="navbutton" href="https://eternal587.github.io/TheCloset/TCR"><text class="nbt2">TCR</text></a>
+<a class="navbuttonc" href="https://eternal587.github.io/TheCloset/Games.html"><text class="nbt3">Games</text></a>
+
+<text class="time" id="time">00:00:00</text>
+</div>
+  
+<!-- 
+<div class="PSA">
+<text class="PSAtext">PSA: Please Refrain from using the TestNav/Riverside/DRC Exploit due to pressure from the Tech Department. </text>
+</div> 
+-->
+
+<!-- 
+<button class="settingsButton">
+<img class="settingsIcon" src="https://i.pinimg.com/736x/21/72/e2/2172e2dfc276ad25c36fce122a014780.jpg"></img>
+</button>
+-->
+
+</html><script type="text/javascript">function timeUpdate() {
+  let time = new Date();
+  let hour = time.getHours();
+  let min = time.getMinutes();
+  let sec = time.getSeconds();
+
+  /// Changing from Number to String In order to read the Length
+
+  hour = String(hour)
+  min = String(min)
+  sec = String(sec)
+
+  /// Adding Extra 0 to 1 Digit Numbers In order to make the time look cleaner
+
+  if (hour.length === 1) {
+    hour = "0" + hour;
+  }
+  if (min.length === 1) {
+    min = "0" + min; 
+  }
+  if (sec.length === 1) {
+    sec = "0" + sec;
+  }
+
+  /// Updating the "time" text to the current Time
+
+  document.getElementById('time').innerHTML = hour + ':' + min + ':' + sec
+}
+
+/// Running the timeUpdate function to set the time so it dosent display 00:00:00 when you join the website
+
+timeUpdate();
+
+setInterval(timeUpdate, 1000)
+
+function GoTo(website) {
+  window.open(website)
+}</script></body><html>
