@@ -2,6 +2,8 @@
   background-color: black;
   color: rgb(0, 255, 0, 1);
   font: 1rem "Fira Sans", sans-serif;
+  margin-top: 35px;
+  position: fixed;
 }
 .navbar {
   top: 0;
@@ -101,7 +103,7 @@ left: 198px;
     <title>TheCloset | Home</title>
   </head>
 <body class="body">
-
+<input id="website"></input> <button onclick="GoToWeb()">Go</button>
 </body>
 <div class="navbar">
 <a class="navbuttonc" href="https://eternal587.github.io/TheCloset/Index.html"><text class="nbt">Home</text></a>
@@ -159,4 +161,8 @@ setInterval(timeUpdate, 1000)
 
 function GoTo(website) {
   window.open(website)
+}
+function GoToWeb() {
+let x = document.getElementById("website").value
+window.open(x)
 }</script></body><html>
