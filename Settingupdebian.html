@@ -106,6 +106,15 @@ left: 198px;
   border-radius: 10px;
   width: auto;
 }
+.subTXT {
+  color: white;
+  font: "Fira Sans", sans-serif;
+  background-color: rgb(255, 255, 255, 0.05);
+  border-color: rgb(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: auto;
+  margin-left: 25px;
+}
 
 .guideBar {
   width: 170px;
@@ -136,7 +145,7 @@ left: 198px;
 }</style></head><body><html>
 
 <head>
-	<title>TheCloset | Guide [Choosing an Exploit]</title>
+	<title>TheCloset | Guide [Custom OS's]</title>
 </head>
 
 <body class="body">
@@ -167,57 +176,43 @@ left: 198px;
 	<a class="mainTXT" href="https://eternal587.github.io/TheCloset/Extension Removers.html">- Extension Removers</a> <br>
 	<a class="mainTXT" href="https://eternal587.github.io/TheCloset/Kiosks.html">- Kiosk Exploits</a> <br>
 	<a class="mainTXT" href="https://eternal587.github.io/TheCloset/Custom OS's.html">- Custom OS's</a> <br>
+  <a class="subTXT" href="https://eternal587.github.io/TheCloset/Settingupdebian.html">- Setting Up</a> <br>
 	<a class="mainTXT" href="https://eternal587.github.io/TheCloset/Unenrollment.html">- Unenrollment</a> <br>
 </div>
 
 	<div class="text">
-		Choosing an exploit is pretty easy first just check a couple of things
-		<br><br>
-Do you have a usb and a seperate computer?
-		<br> <br>
-Yes -
-Press Escape Refresh and Power at the same time then press tab go to the line TPM and take the VERY VERY LAST NUMBER and check it with the numbers below
-		<br><br>
-1 -
-Preform <a class="link" href="https://sh1mmer.me/">Sh1mmer</a> <br>
-2 -
-Preform <a class="link" href="https://github.com/FWSmasher/CryptoSmite">Cryptosmite</a> <br>
-3 -
-Preform <a class="link" href="https://github.com/BinBashBanana/badrecovery">BadRecovery</a> <br>
-4 -
-Preform <a class="link" href="https://github.com/cosmicdevv/Icarus-Lite/">Icarus</a> or <a class="link"
-			href="https://eternal587.github.io/TheCloset/Custom OS's.html">Use a Custom OS</a> <br>
-5 - Use a <a class="link" href="https://eternal587.github.io/TheCloset/Custom OS's.html">Custom OS</a> <br>
-		<br>
-What If I only have a USB?
-		<br><br>
-Check OS Version
-If version is 126 or 125 <br>
-- Preform
-		<a class="link" href="https://eternal587.github.io/TheCloset/Skiovox.html">Skiovox</a> <br>
-Then install chromebook recovery utility and do one of the top options
-		<br><br>
-What If I dont't have a USB or a computer? <br><br>
-If ChromeOS is on 126 or 125 <br>
-- Preform
-		<a class="link" href="https://eternal587.github.io/TheCloset/Skiovox.html">Skiovox</a> <br> <br>
-If ChromeOS is on 127 <br>
-Do you have an android phone? (No Genuinly this is important lmao) <br><br>
-Yes: <br>
-Use <a href="https://eternal587.github.io/TheCloset/OOBEscape.html" class="link">OOBEscape</a>
-		<br> <br>
-If you chromebook is on 129-132 <br>
-use <a class="link" href="https://eternal587.github.io/TheCloset/Guest Mode.html">Guest Mode</a> <br>
-		<br>
-What if I don't wanna Powerwash? <br>
-then use a <a class="link" href="https://eternal587.github.io/TheCloset/Proxies.html">Proxy</a> or use a <a class="link"
-			href="https://eternal587.github.io/TheCloset/Extension Remover.html">Extension Remover</a> <br> <br>
+    Now that you have Shimboot setup, what now?
+    <br><br>
+    First sign in the username and password are currently both user
+    <br><br>
+    Then click the little 2 computers icon in the top right and connect to the Wifi
+    <br><br>
+    Now Go over to the top left corner and click the tools icon, this is your applications menu, now open up the terminal
+    <br><br>
+    After you've done so enter the command sudo expand_rootfs to expand your storage to the entire USB drive
+    <br><br>
+    Now enter sudo apt install curl
+    <br><br>
+    To explain in debian you use packages, which are pretty much applications.
+    <br><br>
+    and for those packages theres packages manager, the one that comes default with debian is apt
+    <br><br>
+    so whenever you want to install something you typpically would do sudo apt install _____
+    <br><br>
+    As well as the command sudo which is pretty much running the command infront of it except with adminstrator/root 
+    <br><br>
+    there are also DEB files which can also be used to install software and are pretty much installers, sort of like dmg files on mac
+    <br><br>
+    for example if you open firefox then go to install google chrome you'll be given a deb files
+    <br><br>
+    To install a deb file go to the terminal and use cd to navigate to the directery the file is in (EX: cd Downloads/RandomAssApp)
+    <br><br>
+    then do sudo apt-get install ./file-name.deb
+    <br><br>
+    I'd Reccomend installing chrome and signing into your school account and just keeping it open to get the school off your back
 
-What If I'm scared of my teachers finding out <br>
-Then why are you here?
-
-</div>
-		<a href="https://eternal587.github.io/TheCloset/Proxies.html" class="nextPageButton">Proxies --></a>
+  </div>
+		<a href="https://eternal587.github.io/TheCloset/Settingupdebian.html" class="nextPageButton">Setting up Debian --></a>
 
 </html><script type="text/javascript">function timeUpdate() {
   let time = new Date();
