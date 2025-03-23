@@ -11,6 +11,9 @@ echo "3. Chrome"
 echo "4. Bluetooth GUI"
 echo "5. Change Your Password"
 echo "6. Neofetch"
+echo "7. Spotify"
+echo "8. Appimage Support"
+echo "9. Strawberry Player"
 read optionnum
 
 if [ $optionnum -eq 1 ]; then
@@ -45,9 +48,19 @@ passwd user
 elif [ $optionnum -eq 6 ]; then
 sudo apt install neofetch
 neofetch
+elif [ $optionnum -eq 7 ]; then
+curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb https://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client
+elif [ $optionnum -eq 8 ]; then
+sudo apt install fuse
+sudo apt install uim-qt5
+elif [ $optionnum -eq 9 ]; then
+curl --output strawberryplayer.deb https://files.strawberrymusicplayer.org/strawberry_1.2.7-bookworm_amd64.deb
+sudo apt-get install ./strawberryplayer.deb
 elif [ $optionnum -eq 0 ]; then
 runningscript=false
 else
-echo "Please Enter a number 0-6"
+echo "Please Enter a number 0-9"
 fi
 done
