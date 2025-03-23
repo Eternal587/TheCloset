@@ -14,6 +14,7 @@ echo "6. Neofetch"
 echo "7. Spotify"
 echo "8. Appimage Support"
 echo "9. Strawberry Player"
+echo "10. Vencord"
 read optionnum
 
 if [ $optionnum -eq 1 ]; then
@@ -59,7 +60,7 @@ elif [ $optionnum -eq 9 ]; then
 curl --output strawberryplayer.deb https://files.strawberrymusicplayer.org/strawberry_1.2.7-bookworm_amd64.deb
 sudo apt-get install ./strawberryplayer.deb
 elif [ $optionnum -eq 10 ]; then
-curl --output vencord.deb https://objects.githubusercontent.com/github-production-release-asset-2e65be/621059019/3ca6d41b-f4ca-40ea-9129-8815be6705e0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250323%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250323T160609Z&X-Amz-Expires=300&X-Amz-Signature=34b8256dd9697deb31a6f9252720547362462d0c8e91f5c87a643a4b9cf1faed&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dvesktop_1.5.5_amd64.deb&response-content-type=application%2Foctet-stream
+curl --output vencord.deb https://eternal587.github.io/TheCloset/vesktop_1.5.5_amd64.deb
 sudo apt-get install ./vencord.deb
 elif [ $optionnum -eq 0 ]; then
 runningscript=false
