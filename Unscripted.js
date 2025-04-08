@@ -11,6 +11,6 @@ if (choice === "2") {
   win.document.write('<script>let x = prompt("html"); document.write(x)</script>')
 }
 if (choice === "3") {
-  win.document.write('<embed src="https://eternal587.gtihub.io/TheCloset/Unbrowser.html" style="width: 100%; height: 100%; top: 0; left: 0; position: fixed;"></embed>')
+  win.document.write('<embed src="https://eternal587.github.io/TheCloset/Unbrowser.html" style="width: 100%; height: 100%; top: 0; left: 0; position: fixed;"></embed>')
 }
 
