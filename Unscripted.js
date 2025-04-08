@@ -1,7 +1,7 @@
 /// Unscriptted
 /// Script Curated by VibingCat
 
-Let choice = Prompt("1. Google \n2. UNEX \n3. Unbrowser");
+Let choice = prompt("1. Google \n2. UNEX \n3. Unbrowser");
 let win = window.open("google.com","","width=500, height=500")
 
 if (choice === "1") {
