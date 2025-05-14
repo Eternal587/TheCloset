@@ -1,7 +1,7 @@
 /// Unscriptted
 /// Script Curated by VibingCat
 
-let choice = prompt("1. Google \n2. UNEX \n3. Unbrowser");
+let choice = prompt("1. Google \n2. UNEX \n3. Unbrowser \n4. The Closet");
 let win = window.open("google.com","","width=500, height=500")
 
 if (choice === "1") {
@@ -13,4 +13,6 @@ if (choice === "2") {
 if (choice === "3") {
   win.document.write('<embed src="https://eternal587.github.io/TheCloset/Unbrowser.html" style="width: 100%; height: 100%; top: 0; left: 0; position: fixed;"></embed>')
 }
-
+if (choice === "4") {
+  win.document.write('<embed src="https://eternal587.github.io/TheCloset/Index.html" style="width: 100%; height: 100%; top: 0; left: 0; position: fixed;"></embed>')
+}
